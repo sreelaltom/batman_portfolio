@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sreelal S S — Software Engineer</title>
+    <meta name="description" content="Portfolio of Sreelal S S, software engineer working with Python, machine learning and mobile apps.">
+    <meta name="theme-color" content="#07080a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>try{var d=document.documentElement;d.classList.add('js');d.classList.add(matchMedia('(prefers-reduced-motion: reduce)').matches?'no-intro':'intro-active')}catch(e){}</script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="intro" id="intro">
+        <div class="intro-bg" aria-hidden="true"></div>
+        <canvas class="intro-canvas" id="introCanvas" aria-hidden="true"></canvas>
+        <div class="intro-logo" aria-hidden="true">
+            <svg viewBox="0 0 100 56"><path d="M50 10L47 3L45 12C36 8 22 6 2 12C8 18 10 24 10 32C14 27 18 27 22 31C26 28 30 29 34 34C40 36 46 44 50 54C54 44 60 36 66 34C70 29 74 28 78 31C82 27 86 27 90 32C90 24 92 18 98 12C78 6 64 8 55 12L53 3Z" fill="currentColor"/></svg>
+        </div>
+        <button type="button" class="intro-skip" id="introSkip">Skip</button>
+    </div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header" id="header">
+        <div class="nav-bar">
+            <a href="#about" class="logo"><svg viewBox="0 0 100 56" aria-hidden="true"><path d="M50 10L47 3L45 12C36 8 22 6 2 12C8 18 10 24 10 32C14 27 18 27 22 31C26 28 30 29 34 34C40 36 46 44 50 54C54 44 60 36 66 34C70 29 74 28 78 31C82 27 86 27 90 32C90 24 92 18 98 12C78 6 64 8 55 12L53 3Z" fill="currentColor"/></svg>Sreelal S S</a>
+            <nav class="navigation" id="nav" aria-label="Primary">
+                <a href="#about">Overview</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" id="about">
+            <div class="moon-glow" aria-hidden="true"></div>
+            <div class="signal" id="signal" aria-hidden="true"></div>
+            <div class="figure" id="figure" aria-hidden="true">
+                <img src="batman%20pic.webp" alt="">
+            </div>
+            <div class="fog f1" aria-hidden="true"></div>
+            <div class="fog f2" aria-hidden="true"></div>
+            <canvas class="bats" id="bats" aria-hidden="true"></canvas>
+            <div class="hero-fade" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <p class="file-tag reveal"><span class="blip"></span> FILE 00 // SUBJECT PROFILE</p>
+                <h1 class="reveal">Sreelal S S</h1>
+                <p class="sub reveal">Software Engineer <span class="sep">//</span> <span id="typed"></span><span class="caret">|</span></p>
+                <p class="lead reveal">Software engineer at Tismo. I've built many AI-related projects, and I'm strong at problem solving.</p>
+                <div class="cta-row reveal">
+                    <a href="#projects" class="btn">View my work</a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                </div>
+            </div>
+            <a href="#profile" class="scroll-cue" aria-label="Scroll to profile"><span></span></a>
+        </section>
+
+        <!-- PROFILE + STATS -->
+        <section class="profile" id="profile">
+            <div class="wrap">
+                <div class="id-card reveal">
+                    <div class="id-photo"><img src="pic.webp" alt="Portrait of Sreelal S S"><span class="id-stamp">VERIFIED</span></div>
+                    <dl class="id-data">
+                        <div><dt>Name</dt><dd>Sreelal S S</dd></div>
+                        <div><dt>Role</dt><dd>Software Engineer, Tismo</dd></div>
+                        <div><dt>Focus</dt><dd>AI projects, Python backend, mobile apps</dd></div>
+                        <div><dt>Strength</dt><dd>Problem solving</dd></div>
+                        <div><dt>Status</dt><dd class="ok"><span class="blip"></span> Available for opportunities</dd></div>
+                    </dl>
+                </div>
+                <div class="stats-grid reveal-group">
+                    <a href="#experience" class="stat reveal"><b data-count="4">0</b><span>Internships</span></a>
+                    <a href="#projects" class="stat reveal"><b data-count="3">0</b><span>Projects shipped</span></a>
+                    <a href="#projects" class="stat reveal"><b data-count="100" data-suffix="+">0</b><span>Users per app</span></a>
+                    <a href="#education" class="stat reveal"><b data-count="97.3" data-decimals="1" data-suffix="%">0</b><span>Best academic score</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+            <div class="wrap">
+                <p class="file-tag reveal">FILE 01 // CAPABILITIES</p>
+                <h2 class="section-title reveal"><span class="scr">Skills</span><em>The tools I build with.</em></h2>
+                <ul class="skill-grid reveal-group">
+                    <li class="reveal card"><small>Backend</small><h3>Python</h3><p>APIs and services in Python and Django.</p></li>
+                    <li class="reveal card"><small>Intelligence</small><h3>Machine Learning</h3><p>Data cleaning, models and RAG chatbots.</p></li>
+                    <li class="reveal card"><small>Data</small><h3>SQL</h3><p>Relational data modelling and SQLite storage.</p></li>
+                    <li class="reveal card"><small>Mobile</small><h3>App Development</h3><p>Cross-platform mobile apps with Flutter.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="education" id="education">
+            <div class="wrap narrow">
+                <p class="file-tag reveal">FILE 02 // TRAINING</p>
+                <h2 class="section-title reveal"><span class="scr">Education</span><em>Where I learned.</em></h2>
+                <div class="edu-list reveal-group">
+                    <article class="edu-row reveal">
+                        <div class="edu-body"><h3>BTech CSE</h3><p>CET Trivandrum · May 2026</p></div>
+                        <div class="edu-score"><b>81<span>%</span></b><div class="bar"><i style="--w:81%"></i></div></div>
+                    </article>
+                    <article class="edu-row no-score reveal">
+                        <div class="edu-body"><h3>BS (Bachelor of Science)</h3><p>Indian Institute of Technology, Madras · Skill: SQL</p></div>
+                    </article>
+                    <article class="edu-row reveal">
+                        <div class="edu-body"><h3>12th</h3><p>GHSS Bhoothakulam · March 2021</p></div>
+                        <div class="edu-score"><b>97.3<span>%</span></b><div class="bar"><i style="--w:97.3%"></i></div></div>
+                    </article>
+                    <article class="edu-row reveal">
+                        <div class="edu-body"><h3>10th</h3><p>GHSS Bhoothakulam · March 2019</p></div>
+                        <div class="edu-score"><b>95<span>%</span></b><div class="bar"><i style="--w:95%"></i></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects" id="projects">
+            <div class="wrap">
+                <p class="file-tag reveal">FILE 03 // OPERATIONS</p>
+                <h2 class="section-title reveal"><span class="scr">Projects</span><em>Things I've shipped.</em></h2>
+                <div class="project-list reveal-group">
+                    <article class="project reveal card">
+                        <small>Case 01 · Music player application</small>
+                        <h3>Musi</h3>
+                        <p>A mobile app where users can play songs, with download features and no ads. Built with Flutter and SQLite for local data storage. About 100 people use it.</p>
+                        <div class="tags"><a href="#skills">Flutter</a><a href="#skills">SQLite</a></div>
+                    </article>
+                    <article class="project reveal card">
+                        <small>Case 02 · Expense tracker</small>
+                        <h3>Kanakke Book</h3>
+                        <p>An expense tracker with monthly bill reminders. Built in Flutter with SQLite, developed with AI assistance, and works completely offline.</p>
+                        <div class="tags"><a href="#skills">Flutter</a><a href="#skills">SQLite</a><a href="#skills">Offline-first</a></div>
+                    </article>
+                    <article class="project reveal card">
+                        <small>Case 03 · Placement experience portal</small>
+                        <h3>CET Placements</h3>
+                        <p>A website where students log in with their college email and read posts and interview experiences shared by seniors. Built with Django and SQL, hosted, with about 100 users logged in.</p>
+                        <div class="tags"><a href="#skills">Django</a><a href="#skills">SQL</a></div>
+                    </article>
+                </div>
+
+                <div class="more-head reveal">
+                    <p class="file-tag">MORE FROM THE FIELD // GITHUB</p>
+                    <div class="more-actions">
+                        <a href="https://github.com/sreelaltom?tab=repositories" class="gh-link" target="_blank" rel="noopener">View all on GitHub <span>↗</span></a>
+                        <div class="sc-nav">
+                            <button type="button" class="sc-btn" id="scPrev" aria-label="Scroll projects left">←</button>
+                            <button type="button" class="sc-btn" id="scNext" aria-label="Scroll projects right">→</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroller-wrap reveal">
+                    <div class="scroller" id="scroller" tabindex="0" aria-label="More projects from GitHub">
+                        <a class="card scard" href="https://github.com/sreelaltom/WeConnect" target="_blank" rel="noopener">
+                            <small>Social media platform <em class="chip live">Live demo</em></small>
+                            <h3>WeConnect</h3>
+                            <p>A minimal social media platform with JWT login, posts, likes, comments, follow and unfollow, user profiles and a dark and light mode toggle.</p>
+                            <div class="tags"><span>React</span><span>TailwindCSS</span><span>FastAPI</span><span>SQLite</span></div>
+                            <span class="go">View repository ↗</span>
+                        </a>
+                        <a class="card scard" href="https://github.com/sreelaltom/chesscet" target="_blank" rel="noopener">
+                            <small>Campus Chess Arena <em class="chip wip">In progress</em></small>
+                            <h3>Chess CET</h3>
+                            <p>A competitive chess platform for college communities, planned with live matches, ELO ratings, tournaments, leaderboards and in-match chat.</p>
+                            <div class="tags"><span>React</span><span>TypeScript</span><span>FastAPI</span><span>WebSockets</span></div>
+                            <span class="go">View repository ↗</span>
+                        </a>
+                        <a class="card scard" href="https://github.com/sreelaltom/block-reels-shorts-extension" target="_blank" rel="noopener">
+                            <small>Browser extension</small>
+                            <h3>Block Reels &amp; Shorts</h3>
+                            <p>A Chrome and Brave extension that blocks Instagram Reels and YouTube Shorts and redirects you to motivational videos to help you stay focused.</p>
+                            <div class="tags"><span>JavaScript</span><span>Chrome / Brave</span></div>
+                            <span class="go">View repository ↗</span>
+                        </a>
+                        <a class="card scard" href="https://github.com/sreelaltom/CarePlus" target="_blank" rel="noopener">
+                            <small>Health app</small>
+                            <h3>CarePlus</h3>
+                            <p>A health monitoring app with a separate backend and frontend.</p>
+                            <div class="tags"><span>Dart</span><span>Backend + Frontend</span></div>
+                            <span class="go">View repository ↗</span>
+                        </a>
+                        <a class="card scard" href="https://github.com/sreelaltom/OneMoreRep" target="_blank" rel="noopener">
+                            <small>Web app</small>
+                            <h3>OneMoreRep</h3>
+                            <p>A full-stack web project with a separate backend and frontend. See the repository for details.</p>
+                            <div class="tags"><span>JavaScript</span><span>Backend + Frontend</span></div>
+                            <span class="go">View repository ↗</span>
+                        </a>
+                        <a class="card scard" href="https://github.com/sreelaltom/Fastapi-social-media" target="_blank" rel="noopener">
+                            <small>Backend project</small>
+                            <h3>FastAPI Social Media</h3>
+                            <p>A social media backend built with FastAPI. See the repository for details.</p>
+                            <div class="tags"><span>Python</span><span>FastAPI</span></div>
+                            <span class="go">View repository ↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="experience" id="experience">
+            <div class="wrap">
+                <p class="file-tag reveal">FILE 04 // FIELD EXPERIENCE</p>
+                <h2 class="section-title reveal"><span class="scr">Experience</span><em>Where I've worked.</em></h2>
+                <div class="job-list reveal-group">
+                    <article class="job reveal card">
+                        <small id="ex-dates">Aug 2026 – Nov 2026</small>
+                        <h3>Software Intern</h3>
+                        <h4>Neoito</h4>
+                        <p>Worked mainly in TypeScript and Python on two of their internal software products.</p>
+                    </article>
+                    <article class="job reveal card">
+                        <small>Aug 2026 – Oct 2026 · On-site</small>
+                        <h3>Software Engineer Intern</h3>
+                        <h4>Happilee</h4>
+                        <p>Worked on real-world projects and gained hands-on development experience, strengthening technical skills through continuous learning and building. Thiruvananthapuram, Kerala.</p>
+                        <div class="tags"><span>Software Development</span><span>Git</span></div>
+                    </article>
+                    <article class="job reveal card">
+                        <small>May 2025 – Jun 2025 · Remote</small>
+                        <h3>Data Science Intern</h3>
+                        <h4>NoBS</h4>
+                        <p>Developed dashboards, worked with large datasets and handled data cleaning. Also built a RAG chatbot for them.</p>
+                        <div class="tags"><span>Statistical Data Analysis</span><span>Python</span></div>
+                    </article>
+                    <article class="job reveal card">
+                        <small>Nov 2024 – Dec 2024 · Remote</small>
+                        <h3>Software Development Intern</h3>
+                        <h4>PaperLMS</h4>
+                        <p>Software development internship working with Python and FastAPI. Trivandrum, Kerala.</p>
+                        <div class="tags"><span>Python</span><span>FastAPI</span></div>
+                    </article>
+                    <article class="job reveal card wide">
+                        <small>Jun 2023 – Jun 2025 · 2 yrs 1 mo · On-site</small>
+                        <h3>Operations Team Member</h3>
+                        <h4>IEDC CET · Innovation and Entrepreneurship Development Cell</h4>
+                        <p>Member of the IEDC operations sub panel at CET. Also served as IEDC Technical Panel Member (Jun 2023, 1 month).</p>
+                        <div class="tags"><span>Management</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <div class="wrap narrow">
+                <p class="file-tag center reveal">FILE 05 // SIGNAL</p>
+                <h2 class="section-title center reveal"><span class="scr">Let's talk</span><em>Have an idea, a role or a question? Send me a message.</em></h2>
+                <form action="" id="contactForm" class="reveal">
+                    <div class="field"><input type="text" name="name" id="name-in" placeholder=" " required><label for="name-in">Name</label></div>
+                    <div class="field"><input type="email" name="email" id="email-in" placeholder=" " required><label for="email-in">Email</label></div>
+                    <div class="field"><textarea name="dec" id="dec" rows="4" placeholder=" "></textarea><label for="dec">Message</label></div>
+                    <button type="submit" class="btn" id="sub">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <p class="foot-note">Portfolio of Sreelal S S. Built with HTML, CSS and a little JavaScript.</p>
+            <div class="foot-row">
+                <p>&copy; 2026 Sreelal S S. All rights reserved.</p>
+                <nav class="foot-links" aria-label="Footer">
+                    <a href="#about">Overview</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a><a href="#about">Back to top ↑</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
